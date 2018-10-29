@@ -1,0 +1,11 @@
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\obj\Debug\netcoreapp2.1\Teste_Compressao.csprojAssemblyReference.cache
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\obj\Debug\netcoreapp2.1\Teste_Compressao.csproj.CoreCompileInputs.cache
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\obj\Debug\netcoreapp2.1\Teste_Compressao.AssemblyInfoInputs.cache
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\obj\Debug\netcoreapp2.1\Teste_Compressao.AssemblyInfo.cs
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\bin\Debug\netcoreapp2.1\Teste_Compressao.deps.json
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\bin\Debug\netcoreapp2.1\Teste_Compressao.runtimeconfig.json
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\bin\Debug\netcoreapp2.1\Teste_Compressao.runtimeconfig.dev.json
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\bin\Debug\netcoreapp2.1\Teste_Compressao.dll
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\bin\Debug\netcoreapp2.1\Teste_Compressao.pdb
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\obj\Debug\netcoreapp2.1\Teste_Compressao.dll
+C:\Users\carlos.tsukamoto\Desktop\Teste_Compressao\obj\Debug\netcoreapp2.1\Teste_Compressao.pdb
