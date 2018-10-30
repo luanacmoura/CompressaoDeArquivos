@@ -1,6 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.IO.Compression;
+using CompressaoArquivos.Util;
+using CompressaoArquivos.ViewControllers;
+
 
 namespace Teste_Compressao
 {
@@ -11,59 +14,34 @@ namespace Teste_Compressao
             int opcao, opcao2;
             string arquivoinsert, diretorioinsert, arquivo, diretorio;
 
-            Console.WriteLine("Opções");
-            Console.WriteLine("1. Comprimir");
-            Console.WriteLine("2. Descomprimir");
+            Menu.Primario();
             opcao = int.Parse(Console.ReadLine());
             
-
             if (opcao == 1)
             {
+                Console.Clear();
                 Console.WriteLine("Digite o endereço onde está a pasta que deseja comprimir!");
                 arquivoinsert = Console.ReadLine();
 
-                if (File.Exists(arquivoinsert)) {
-                    Console.Clear();
-                    Console.WriteLine("1. Compactação rápida");
-                    Console.WriteLine("2. Compactação otimizada");
-                    Console.WriteLine("3. Sem compactação");
+                if (Directory.Exists(arquivoinsert)) {
+
+                    Menu.CompressionLevel();
                     opcao2 = int.Parse(Console.ReadLine());
 
                         switch (opcao2)
                         {
                             case 1: {
-                                Console.Clear();
-                                arquivo = $@"{arquivoinsert}";
-                                diretorio = $@"{arquivoinsert}.zip";
-                                ZipFile.CreateFromDirectory(arquivo, diretorio, CompressionLevel.Fastest); //pra onde vai, e qual arquivo será zipado!
-                                Console.WriteLine("");
-                                Console.WriteLine($"Pasta zipada!");
-                                Console.WriteLine($"O endereço onde a pasta comprimida está é: {arquivoinsert}.zip");
-                                Console.ReadKey();
+                                Compressao.Fastest(arquivoinsert);
                                 break;
                             }
 
                             case 2: {
-                                Console.Clear();
-                                arquivo = $@"{arquivoinsert}";
-                                diretorio = $@"{arquivoinsert}.zip";
-                                ZipFile.CreateFromDirectory(arquivo, diretorio, CompressionLevel.Optimal); //pra onde vai, e qual arquivo será zipado!
-                                Console.WriteLine("");
-                                Console.WriteLine($"Pasta zipada!");
-                                Console.WriteLine($"O endereço onde a pasta comprimida está é: {arquivoinsert}.zip");
-                                Console.ReadKey();
+                                Compressao.Optimal(arquivoinsert);
                                 break;
                             }
 
                             case 3: {
-                                Console.Clear();
-                                arquivo = $@"{arquivoinsert}";
-                                diretorio = $@"{arquivoinsert}.zip";
-                                ZipFile.CreateFromDirectory(arquivo, diretorio, CompressionLevel.NoCompression); //pra onde vai, e qual arquivo será zipado!
-                                Console.WriteLine("");
-                                Console.WriteLine($"Pasta zipada!");
-                                Console.WriteLine($"O endereço onde a pasta comprimida está é: {arquivoinsert}.zip");
-                                Console.ReadKey();
+                                Compressao.NoCompression(arquivoinsert);
                                 break;
                             }
 
@@ -77,7 +55,9 @@ namespace Teste_Compressao
 
             else if (opcao == 2)
             {
-
+                // if (Directory.Exists(arquivoinsert)) {
+                //     Directory.Delete(arquivoinsert);
+                // }
                 Console.WriteLine("Digite o endereço em que a pasta comprimida está!");
                 arquivoinsert = Console.ReadLine();
 
@@ -94,9 +74,6 @@ namespace Teste_Compressao
             {
                 Console.WriteLine("Opção inválida!");
             }
-
-
-
-        }
+       }
     }
 }

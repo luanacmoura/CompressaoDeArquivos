@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Teste_Compressao.csproj"
+                "${workspaceFolder}/CompressaoArquivos.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
