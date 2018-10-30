@@ -2320,11 +2320,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlos.tsukamoto\\Desktop\\Teste_Compressao\\Teste_Compressao.csproj",
+      "projectUniqueName": "C:\\Users\\46863229870\\Desktop\\CompressaoDeArquivos-master\\Teste_Compressao.csproj",
       "projectName": "Teste_Compressao",
-      "projectPath": "C:\\Users\\carlos.tsukamoto\\Desktop\\Teste_Compressao\\Teste_Compressao.csproj",
+      "projectPath": "C:\\Users\\46863229870\\Desktop\\CompressaoDeArquivos-master\\Teste_Compressao.csproj",
       "packagesPath": "C:\\Users\\carlos.tsukamoto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlos.tsukamoto\\Desktop\\Teste_Compressao\\obj\\",
+      "outputPath": "C:\\Users\\46863229870\\Desktop\\CompressaoDeArquivos-master\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
