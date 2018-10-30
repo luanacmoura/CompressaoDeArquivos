@@ -9,6 +9,7 @@ namespace CompressaoArquivos.Util
             Console.WriteLine("Opções");
             Console.WriteLine("1. Comprimir");
             Console.WriteLine("2. Descomprimir");
+            Console.WriteLine("3. Adicionar arquivos num .zip já existente!");
         }
 
         public static void CompressionLevel () {

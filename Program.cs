@@ -4,7 +4,6 @@ using System.IO.Compression;
 using CompressaoArquivos.Util;
 using CompressaoArquivos.ViewControllers;
 
-
 namespace Teste_Compressao
 {
     class Program
@@ -12,7 +11,7 @@ namespace Teste_Compressao
         static void Main(string[] args)
         {
             int opcao, opcao2;
-            string arquivoinsert, diretorioinsert, arquivo, diretorio;
+            string arquivoinsert;
 
             Menu.Primario();
             opcao = int.Parse(Console.ReadLine());
@@ -51,25 +50,27 @@ namespace Teste_Compressao
                             }
                         }
                 }
+                else {
+                    Console.WriteLine("Caminho inválido!");
+                }
             }
 
             else if (opcao == 2)
             {
-                // if (Directory.Exists(arquivoinsert)) {
-                //     Directory.Delete(arquivoinsert);
-                // }
+                Console.Clear();
                 Console.WriteLine("Digite o endereço em que a pasta comprimida está!");
                 arquivoinsert = Console.ReadLine();
-
-                arquivo = $@"{arquivoinsert}"; //necessário para que não coloque duas barras
-
-                diretorioinsert = arquivo.Remove(arquivo.Length - 4);
-
-                diretorio = $@"{diretorioinsert}"; //necessário para que eu não coloque duas barras
-
-                ZipFile.ExtractToDirectory(arquivo, diretorio);
+                
+                Descompressao.Arquivos(arquivoinsert);
             }
+            
+            else if (opcao == 3) {
+                Console.Clear();
+                Console.WriteLine("Digite o caminho do .zip!");
+                arquivoinsert = Console.ReadLine();
 
+                Compressao.Add(arquivoinsert);
+            }
             else
             {
                 Console.WriteLine("Opção inválida!");
